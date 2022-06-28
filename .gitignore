@@ -1,0 +1,9 @@
+*.js
+*.js.map
+build/
+node_modules/
+.idea/
+*.dir/
+Binary/
+/*.jscompress
+__MACOSX/

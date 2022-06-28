@@ -1,5 +1,4 @@
-**/*.js
+**/*.ts
 !**/*.d.ts
 /.idea/
 /.vscode/
-/node_modules
