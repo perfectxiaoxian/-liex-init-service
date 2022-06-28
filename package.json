@@ -1,0 +1,21 @@
+{
+	"name": "@liex/init-service",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"bin": {
+		"init-service": "index.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"commander": "^9.3.0",
+		"node-cmd": "^5.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.0"
+	}
+}
