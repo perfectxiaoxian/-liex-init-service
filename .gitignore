@@ -7,3 +7,4 @@ node_modules/
 Binary/
 /*.jscompress
 __MACOSX/
+*.DS_Store
