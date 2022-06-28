@@ -3,8 +3,10 @@
 build/
 node_modules/
 .idea/
+.vscode/
 *.dir/
 Binary/
 /*.jscompress
 __MACOSX/
 *.DS_Store
+

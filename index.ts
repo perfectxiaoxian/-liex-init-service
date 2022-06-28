@@ -1,26 +1,19 @@
 #! /usr/bin/env node
+
 import commander from "commander";
-const program = new commander.Command();
 const cmd = require("node-cmd");
-const fs = require("fs");
-const path = require('path');
+import fs from "fs";
+import path from 'path';
+const program = new commander.Command();
 
 program
     .version('1.0.0')
-    .option('--first', 'display just the first substring')
+    .argument('<string>', 'display just the first substring')
     .action((str, options) => {
-        fs.mkdirsSync(path.join(__dirname, `${str}`));
+        console.log(str);
+        fs.mkdirSync(path.join(__dirname, `${str}`));
         console.log(`The ${str} folder is successfully created`);
-        /* cmd.run(`npm install --save axios`,
-            (err: any, data: any) => {
-                if (!err) {
-                    console.log('init success');
-                    return;
-                }
-                console.error('init error');
-            }); */
+        fs.writeFileSync(path.join(__dirname, str, '123.ts'), '123');
     })
 
 program.parse(process.argv);
-const options = program.opts();
-console.log(options);
