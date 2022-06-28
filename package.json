@@ -1,6 +1,6 @@
 {
 	"name": "@liex/init-service",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "搭建node服务指令 init-service",
 	"main": "index.js",
 	"bin": {
